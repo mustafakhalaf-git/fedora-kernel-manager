@@ -1,11 +1,11 @@
-name: RPM Build (Fedora 40 - x86-64)
+name: RPM Build (Fedora 41 - x86-64)
 on: workflow_dispatch
 
 jobs:
   build:
     runs-on: ubuntu-latest
     container:
-      image: fedora:40
+      image: fedora:41
       volumes:
         - /proc:/proc
       options: --privileged -it
